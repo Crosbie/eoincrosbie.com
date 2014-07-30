@@ -1,0 +1,55 @@
+#container {
+    margin: 10px;
+    margin-top: 30px;
+    padding: 20px 0 ;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,0.4);
+//    box-shadow: 0px 1px 2px 0px;
+}
+
+#banner {
+    transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg); /* IE 9 */
+    -webkit-transform:rotate(-45deg); /* Opera, Chrome, and Safari */
+    position: absolute;
+    right: -53px;
+    bottom: 49px;
+    font-size: 25px;
+    background: #f5e40b;
+    width: 250px;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+
+#boxContainer {
+    text-align: center;
+}
+
+.indexBox {
+    display: inline-block;
+    min-width: 300px;
+    max-width: 310px;
+    width: 25%;
+    margin: 15px;
+    padding: 10px;
+    height: 300px;
+}
+
+.stepNum {
+    font-family: sans-serif;
+    font-size: 200px;
+    color: rgba(9, 234, 52, 0.58);
+    font-weight: bold;
+}
+
+#buttonContainer {
+    text-align: center;
+    margin: 30px 0;
+}
+
+#startNow {
+    min-width: 250px;
+    background-color: #f4bc14;
+}
