@@ -2510,24 +2510,19 @@ th.hide-for-touch {
 body {
   font-family: 'Verdana';
   font-size: 12px;
-  background: url("../images/bg.jpg") no-repeat;
+  color: black;
   background-size: 1800px;
-  background-color: #fff1ac;
   width: 100%;
   top: 0;
   position: absolute;
 }
 
-h1.title {
-  font-family: 'Pacifico', cursive;
-  color: #db54db;
+h1 {
   text-align: center;
   font-size: 50px;
-  text-shadow: 1px 1px black;
 }
 
-h1.title span {
-  font-family: 'Pacifico', cursive;
+h1 span {
   color: #fac532;
   margin-left: 4px;
 }
@@ -2535,6 +2530,7 @@ h1.title span {
 .box {
   background-color: #ffffff;
   border-radius: 10px;
+  border: 2px dotted black;
 }
 
 h3 {
@@ -2561,6 +2557,42 @@ h3 {
   border: 1px solid transparent;
 }
 
+.icon {
+  background-image: url("../images/icons.png");
+  display: inline-block;
+  content: " ";
+  height: 46px;
+  width: 46px;
+}
+
+.icon.facebook {
+  background-position: 0px 0px;
+}
+
+.icon.twitter {
+  background-position: -49px 0px;
+}
+
+.icon.gPlus {
+  background-position: -102px 0px;
+}
+
+.icon.youtube {
+  background-position: -154px 0px;
+}
+
+.icon.rss {
+  background-position: 0px -49px;
+}
+
+.icon.linkedin {
+  background-position: -49px -49px;
+}
+
+.icon.github {
+  background-position: -151px -49px;
+}
+
 #container {
   margin: 10px;
   margin-top: 30px;
@@ -2570,32 +2602,41 @@ h3 {
   background-color: rgba(255,255,255,0.4);
 }
 
-#banner {
-  transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  position: absolute;
-  right: -53px;
-  bottom: 49px;
-  font-size: 25px;
-  background: #f5e40b;
-  width: 250px;
-  text-align: center;
-  padding: 10px 0;
-  display: none;
-}
-
 #boxContainer {
   text-align: center;
 }
 
-.indexBox {
+#box1 {
+  background: url("../images/me.jpg") no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+
+#box2 {
+  background: url("../images/persona.jpg") no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+
+#box3 {
+  background: url("../images/india.jpg") no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+
+.boxOuter {
   display: inline-block;
+  width: 29%;
+  padding: 15px;
+  text-align: center;
   min-width: 300px;
   max-width: 310px;
-  width: 25%;
-  margin: 15px;
+}
+
+.indexBox {
+  display: inline-block;
   padding: 10px;
+  margin-bottom: 10px;
   height: 300px;
 }
 
@@ -2611,9 +2652,28 @@ h3 {
   margin: 30px 0;
 }
 
-#startNow {
+.btn.btn-lg {
   min-width: 250px;
   background-color: #f4bc14;
+}
+
+#socialBox {
+  max-height: 0;
+  overflow: hidden;
+  background-color: white;
+  padding-top: 0px;
+  box-shadow: none;
+  margin-top: 30px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+#socialBox.expanded {
+  padding-top: 50px;
+  max-height: 200px;
+  box-shadow: 0px 6px 4px 0px #252525;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 #form-container {

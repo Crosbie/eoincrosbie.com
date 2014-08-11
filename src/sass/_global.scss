@@ -1,23 +1,19 @@
 body {
     font-family: 'Verdana';
     font-size: 12px;
-    background: url('../images/bg.jpg') no-repeat;
+    color: black;
     background-size: 1800px;
-    background-color: #fff1ac;
 //    overflow: hidden;
     width: 100%;
     top: 0;
     position: absolute;
 }
-h1.title{
-    font-family: 'Pacifico', cursive;
-    color: #db54db;
+h1{
     text-align: center;
     font-size: 50px;
-    text-shadow: 1px 1px black;
     
     span{
-        font-family: 'Pacifico', cursive;
+//        font-family: 'Pacifico', cursive;
         color: #fac532;
         margin-left: 4px;
     }
@@ -28,6 +24,7 @@ h1.title{
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
+    border: 2px dotted black;
 }
 
 h3 {
@@ -52,4 +49,20 @@ h3 {
     user-select: none;
     background-image: none;
     border: 1px solid transparent;
+}
+
+.icon {
+    background-image: url('../images/icons.png');
+    display: inline-block;
+    content: " ";
+    height: 46px;
+    width: 46px;
+    
+    &.facebook {background-position: 0px 0px;}
+    &.twitter {background-position: -49px 0px;}
+    &.gPlus {background-position: -102px 0px;}
+    &.youtube {background-position: -154px 0px;}
+    &.rss {background-position: 0px -49px;}
+    &.linkedin {background-position: -49px -49px;}
+    &.github {background-position: -151px -49px;}
 }

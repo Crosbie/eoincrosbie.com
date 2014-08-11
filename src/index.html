@@ -32,38 +32,48 @@
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-          ga('create', 'UA-52623584-1', 'auto');
+
+          ga('create', 'UA-52623584-2', 'auto');
           ga('send', 'pageview');
+
         </script>
         
         <div id="container">
-            <h1 class="title">Pitch<span>Me</span>Holidays</h1>
-            <p>Let the holidays come to you...</p>
+            <h1>EoinCrosbie<span>.com</span></h1>
         </div>
         
         <div id="boxContainer">
-            <div id="box1" class="box indexBox">
-                <h3>Post a destination & time for your holiday</h3>
-                <span class="stepNum">1</span>
+            <div class="boxOuter">
+                <div id="box1" class="box indexBox">
+                    <h3>Me!</h3>
+                    <p>I'm Eoin Crosbie, 24 year old Developer from Ireland</p>
+                </div>
+                <button class="btn btn-lg" id="startNow" onclick="showCV()">CV</button>
             </div>
 
-            <div id="box2" class="box indexBox">
-                <h3>Agencies pitch you their best deals that match your requirements</h3>
-                <span class="stepNum">2</span>
+            <div class="boxOuter">
+                <div id="box2" class="box indexBox">
+                    <h3>My Online Personas</h3>
+                    <p>Find me on Twitter, LinkedIn, GitHub, G+ etc...</p>
+                    <div id="socialBox">
+                        <a href="http://ie.linkedin.com/pub/eoin-crosbie/42/a70/1b5/" title="Eoin Crosbie"><div class="icon linkedin"></div></a>
+                        <a href="https://twitter.com/Eoin_Crosbie" title="@Eoin_Crosbie"><div class="icon twitter"></div></a>
+                        <a href="https://www.youtube.com/channel/UCj1BwHcysYyAxfW3mfa5RBg" title="Eoin Crosbie"><div class="icon youtube"></div></a>
+                        <a href="https://plus.google.com/111414199607944084618" title="Eoin Crosbie"><div class="icon gPlus"></div></a>
+                        <a href="https://github.com/Crosbie" title="Crosbie"><div class="icon github"></div></a>
+                    </div>
+                </div>
+                <button class="btn btn-lg" id="personas" onclick="showSocial()">Show Social</button>
             </div>
 
-            <div id="box3" class="box indexBox">
-                <h3>Pick the best value holiday from the list of pitches</h3>
-                <span class="stepNum">3</span>
+            <div class="boxOuter">
+                <div id="box3" class="box indexBox">
+                    <h3>My Blog</h3>
+                    <p>Random thoughts, ramblings, travels, interests, verbal diarrhea</p>
+                </div>
+                <button class="btn btn-lg" id="startNow" onclick="location.href='/blog'">Blog</button>
             </div>
         </div>
         
-        <div id="buttonContainer">
-            <button class="btn btn-lg" id="startNow" onclick="location.href='join.html'">Start Now</button>
-        </div>
-        
-        
-        
-        <div id="banner">Coming Soon...</div>
     </body>
 </html>

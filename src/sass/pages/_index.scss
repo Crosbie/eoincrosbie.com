@@ -8,32 +8,42 @@
 //    box-shadow: 0px 1px 2px 0px;
 }
 
-#banner {
-    transform:rotate(-45deg);
-    -ms-transform:rotate(-45deg); /* IE 9 */
-    -webkit-transform:rotate(-45deg); /* Opera, Chrome, and Safari */
-    position: absolute;
-    right: -53px;
-    bottom: 49px;
-    font-size: 25px;
-    background: #f5e40b;
-    width: 250px;
-    text-align: center;
-    padding: 10px 0;
-    display: none;
-}
 
 #boxContainer {
     text-align: center;
 }
 
-.indexBox {
+#box1 {
+    background: url('../images/me.jpg') no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+#box2 {
+    background: url('../images/persona.jpg') no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+#box3 {
+    background: url('../images/india.jpg') no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+.boxOuter {
     display: inline-block;
+    width: 29%;
+    padding: 15px;
+    text-align: center;
     min-width: 300px;
     max-width: 310px;
-    width: 25%;
-    margin: 15px;
+}
+
+.indexBox {
+    display: inline-block;
     padding: 10px;
+    margin-bottom: 10px;
     height: 300px;
 }
 
@@ -49,7 +59,31 @@
     margin: 30px 0;
 }
 
-#startNow {
+.btn.btn-lg {
     min-width: 250px;
     background-color: #f4bc14;
+}
+
+#socialBox {
+	/* Initially we don't want any height, and we want the contents to be hidden */
+	max-height: 0;
+	overflow: hidden;
+    background-color: white;
+    padding-top: 0px;
+    box-shadow: none;
+    margin-top: 30px;
+
+	/* Set our transitions up. */
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	transition: all 0.8s;
+    
+    &.expanded {
+        /* On click, set the max-height to something large. In this case there's an obvious limit. */
+        padding-top: 50px;
+        max-height: 200px;
+        box-shadow: 0px 6px 4px 0px #252525;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
 }
